@@ -5,15 +5,16 @@ from pydantic import BaseModel
 from GoogleNews import GoogleNews
 import os
 
-app = FastAPI(title="API de Notícias",
-             description="API para busca de notícias usando GoogleNews",
-             version="1.0.0")
+# Configuração da API FastAPI com metadados
+app = FastAPI(
+    title="API de Notícias",
+    description="API para busca de notícias do Google News com filtros personalizados",
+    version="1.0.0",
+    docs_url="/docs",
+    redoc_url="/redoc"
+)
 
-# Rota raiz para verificar se a API está funcionando
-@app.get("/")
-async def root():
-    return {"status": "online", "message": "API de Notícias está funcionando!"}
-
+# Modelo de dados para as notícias
 class Noticia(BaseModel):
     titulo: str
     data: str
@@ -23,14 +24,37 @@ class Noticia(BaseModel):
     id: str
     termo_busca: str
 
-@app.get("/buscar-noticias/")
+# Rota de verificação de saúde da API
+@app.get("/", tags=["Status"])
+async def root():
+    """Verifica se a API está funcionando"""
+    return {
+        "status": "online",
+        "message": "API de Notícias está funcionando!",
+        "docs": "/docs"
+    }
+
+@app.get("/buscar-noticias/", response_model=List[dict], tags=["Notícias"])
 async def buscar_noticias(
     termo: str,
     dias: Optional[int] = 7,
     fonte: Optional[str] = None,
     paginas: Optional[int] = 2
 ):
+    """
+    Busca notícias no Google News com base nos parâmetros fornecidos
+    
+    Args:
+        termo: Palavra-chave para busca
+        dias: Período de busca em dias (padrão: 7)
+        fonte: Filtrar por fonte específica (opcional)
+        paginas: Número de páginas de resultados (padrão: 2)
+    
+    Returns:
+        Lista de notícias encontradas
+    """
     try:
+        # Inicializa o GoogleNews com configurações para PT-BR
         googlenews = GoogleNews(lang='pt', region='BR')
         
         # Configura o período de busca
@@ -39,17 +63,20 @@ async def buscar_noticias(
         data_inicio_str = data_inicio.strftime('%m/%d/%Y')
         data_fim_str = data_fim.strftime('%m/%d/%Y')
         
+        # Configura e executa a busca
         googlenews.set_time_range(data_inicio_str, data_fim_str)
         googlenews.search(termo)
         
-        # Busca em múltiplas páginas
+        # Busca páginas adicionais se solicitado
         for i in range(2, paginas + 1):
             googlenews.get_page(i)
             
         noticias = googlenews.result()
         noticias_filtradas = []
         
+        # Processa e filtra os resultados
         for idx, noticia in enumerate(noticias):
+            # Aplica filtro de fonte se especificado
             if fonte and fonte.lower() not in noticia.get('media', '').lower():
                 continue
                 
@@ -66,4 +93,7 @@ async def buscar_noticias(
         return noticias_filtradas
         
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e)) 
+        raise HTTPException(
+            status_code=500,
+            detail=f"Erro ao buscar notícias: {str(e)}"
+        ) 
