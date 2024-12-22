@@ -4,6 +4,7 @@ from typing import Optional, List
 from pydantic import BaseModel
 from GoogleNews import GoogleNews
 import os
+from urllib.parse import urlparse, parse_qs, urlunparse
 
 # Configuração da API FastAPI com metadados
 app = FastAPI(
@@ -33,6 +34,23 @@ async def root():
         "message": "API de Notícias está funcionando!",
         "docs": "/docs"
     }
+
+def limpar_url(url: str) -> str:
+    """Remove parâmetros de rastreamento do Google da URL"""
+    if not url:
+        return url
+        
+    try:
+        # Parse a URL
+        parsed = urlparse(url)
+        # Remove parâmetros de rastreamento
+        query = parse_qs(parsed.query)
+        query = {k: v for k, v in query.items() if not k in ['ved', 'usg']}
+        # Reconstrói a URL limpa
+        clean_url = parsed._replace(query='&'.join(f'{k}={v[0]}' for k, v in query.items()))
+        return urlunparse(clean_url).split('&ved=')[0].split('&usg=')[0]
+    except:
+        return url
 
 @app.get("/buscar-noticias/", response_model=List[dict], tags=["Notícias"])
 async def buscar_noticias(
@@ -86,7 +104,7 @@ async def buscar_noticias(
                 "data": noticia.get('date'),
                 "fonte": noticia.get('media'),
                 "descricao": noticia.get('desc'),
-                "link": noticia.get('link'),
+                "link": limpar_url(noticia.get('link')),
                 "termo_busca": termo
             })
         
