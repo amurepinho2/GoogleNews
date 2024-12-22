@@ -1,0 +1,273 @@
+2024-12-22 02:15:13,956 - DEBUG - Total count is not available when sort by date
+2024-12-22 02:15:14,776 - DEBUG - Total count is not available when sort by date
+2024-12-22 02:15:14,776 - DEBUG - Termo buscado: startup capta R$
+2024-12-22 02:15:14,776 - DEBUG - Número total de notícias antes do filtro: 0
+2024-12-22 02:15:14,776 - DEBUG - Total de notícias filtradas: 0
+2024-12-22 02:15:14,776 - DEBUG - Nenhuma notícia encontrada após filtro
+2024-12-22 02:15:36,041 - DEBUG - Total count is not available when sort by date
+2024-12-22 02:15:36,096 - DEBUG - /etc/localtime found
+2024-12-22 02:15:36,100 - DEBUG - 1 found:
+ {'/etc/localtime is a symlink to': 'America/Sao_Paulo'}
+2024-12-22 02:15:37,315 - DEBUG - Total count is not available when sort by date
+2024-12-22 02:15:37,376 - DEBUG - Termo buscado: startup capta R$
+2024-12-22 02:15:37,376 - DEBUG - Número total de notícias antes do filtro: 20
+2024-12-22 02:15:37,376 - DEBUG - ==================================================
+2024-12-22 02:15:37,376 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,376 - DEBUG - Título: Rodadas da semana: Sami capta R$ 60 mi, e Nubank investe US$ 150 mi em banco digital
+2024-12-22 02:15:37,376 - DEBUG - Estrutura completa da notícia: {'title': 'Rodadas da semana: Sami capta R$ 60 mi, e Nubank investe US$ 150 mi em banco digital', 'media': 'Bloomberg Línea', 'date': 'á 19 horas', 'datetime': nan, 'desc': 'Em ano que ficou aquém das expectativas de retomada de aportes em startups, captação no país chegou a US$ 1,9 bilhão em 11 meses, versus US$ 1,8 bilhão no...', 'link': 'https://www.bloomberglinea.com.br/startups/rodadas-da-semana-sami-capta-r-60-mi-e-nubank-investe-us-150-mi-em-banco-digital/&ved=2ahUKEwi58KrCz7qKAxVYE7kGHQh_JNkQxfQBegQIARAC&usg=AOvVaw0sjafVdT_-_yIj5RcSyD-V', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,376 - DEBUG - Data original da notícia: á 19 horas
+2024-12-22 02:15:37,376 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,376 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,376 - DEBUG - ==================================================
+2024-12-22 02:15:37,376 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,376 - DEBUG - Título: Com "estúdio musical no celular", Murb capta R$ 1M para expandir
+2024-12-22 02:15:37,376 - DEBUG - Estrutura completa da notícia: {'title': 'Com "estúdio musical no celular", Murb capta R$ 1M para expandir', 'media': 'Startups', 'date': '2 dias atrás', 'datetime': nan, 'desc': 'Lançada este ano, musictech aposta na democratização de ferramentas musicais e seu app já teve mais de 270 mil downloads.', 'link': 'https://startups.com.br/negocios/com-estudio-musical-no-celular-murb-capta-r-1m-para-expandir/&ved=2ahUKEwi58KrCz7qKAxVYE7kGHQh_JNkQxfQBegQICRAC&usg=AOvVaw2HAKrXLSIJ_ztbyCOUuAQI', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,376 - DEBUG - Data original da notícia: 2 dias atrás
+2024-12-22 02:15:37,376 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,376 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,376 - DEBUG - ==================================================
+2024-12-22 02:15:37,376 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,376 - DEBUG - Título: Alloy capta R$ 1 milhão com Comunitá
+2024-12-22 02:15:37,376 - DEBUG - Estrutura completa da notícia: {'title': 'Alloy capta R$ 1 milhão com Comunitá', 'media': 'Baguete', 'date': '2 dias atrás', 'datetime': nan, 'desc': 'Recursos serão usados para gestão interna e de equipes. 19 de dezembro de 2024 - 14:53. Tem algo errado neste post? Avise a redação! Tamanho da fonte: -A+A.', 'link': 'https://www.baguete.com.br/noticias/alloy-capta-r-1-milhao-com-comunita&ved=2ahUKEwi58KrCz7qKAxVYE7kGHQh_JNkQxfQBegQIAhAC&usg=AOvVaw3sq2n1n2lF6Dptr6srzc3C', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,377 - DEBUG - Data original da notícia: 2 dias atrás
+2024-12-22 02:15:37,377 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,377 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,377 - DEBUG - ==================================================
+2024-12-22 02:15:37,377 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,377 - DEBUG - Título: Stoa capta R$ 2 milhões para digitalizar gestão de seguros para corretores
+2024-12-22 02:15:37,377 - DEBUG - Estrutura completa da notícia: {'title': 'Stoa capta R$ 2 milhões para digitalizar gestão de seguros para corretores', 'media': 'Startupi', 'date': '2 dias atrás', 'datetime': nan, 'desc': 'A Stoa, insurtech brasileira voltada à digitalização da gestão de seguros para pequenos e médios corretores, concluiu sua primeira rodada de investimento...', 'link': 'https://startupi.com.br/stoa-capta-2-milhoes/&ved=2ahUKEwi58KrCz7qKAxVYE7kGHQh_JNkQxfQBegQIBBAC&usg=AOvVaw19NTF4CCLSkuuzlF3JKc-T', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,377 - DEBUG - Data original da notícia: 2 dias atrás
+2024-12-22 02:15:37,377 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,377 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,377 - DEBUG - ==================================================
+2024-12-22 02:15:37,377 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,377 - DEBUG - Título: Fintech Conta Comigo Digital capta seed de R$ 3,25 milhões
+2024-12-22 02:15:37,377 - DEBUG - Estrutura completa da notícia: {'title': 'Fintech Conta Comigo Digital capta seed de R$ 3,25 milhões', 'media': 'Pequenas Empresas & Grandes Negócios', 'date': '2 dias atrás', 'datetime': nan, 'desc': 'Startup conecta concessionárias de serviços e entes públicos diretamente aos bancos para simplificar pagamento de contas e reduzir inadimplência.', 'link': 'https://revistapegn.globo.com/startups/noticia/2024/12/fintech-conta-comigo-digital-capta-seed-de-r-325-milhoes.ghtml&ved=2ahUKEwi58KrCz7qKAxVYE7kGHQh_JNkQxfQBegQIBxAC&usg=AOvVaw0UY6CGRgadXiivoxr3ZUBv', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,377 - DEBUG - Data original da notícia: 2 dias atrás
+2024-12-22 02:15:37,377 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,377 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,377 - DEBUG - ==================================================
+2024-12-22 02:15:37,377 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,377 - DEBUG - Título: MinusSugar capta R$ 15,1 milhões para extrair açúcar do suco de laranja
+2024-12-22 02:15:37,377 - DEBUG - Estrutura completa da notícia: {'title': 'MinusSugar capta R$ 15,1 milhões para extrair açúcar do suco de laranja', 'media': 'Startupi', 'date': '4 dias atrás', 'datetime': nan, 'desc': 'A MinusSugar, biotech fundada por brasileiros com sede nos EUA, acaba de fazer o primeiro closing de uma rodada de até US$ 2,5 milhões, que equivale a R$...', 'link': 'https://startupi.com.br/minussugar-capta-15-milhoes/&ved=2ahUKEwi58KrCz7qKAxVYE7kGHQh_JNkQxfQBegQIAxAC&usg=AOvVaw2yq4I3Ns8z-f6_wAXeQh5A', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,377 - DEBUG - Data original da notícia: 4 dias atrás
+2024-12-22 02:15:37,377 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,377 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,377 - DEBUG - ==================================================
+2024-12-22 02:15:37,377 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,377 - DEBUG - Título: Após ano de ajustes, healthtech Sami capta R$ 60 mi e prevê salto maior em 2025
+2024-12-22 02:15:37,377 - DEBUG - Estrutura completa da notícia: {'title': 'Após ano de ajustes, healthtech Sami capta R$ 60 mi e prevê salto maior em 2025', 'media': 'Bloomberg Línea', 'date': '4 dias atrás', 'datetime': nan, 'desc': "Recursos via equity e dívida vão permitir 'pisar no acelerador', diz o CEO, Guilherme Berardo, à Bloomberg Línea; captação é extensão da Série B e foi...", 'link': 'https://www.bloomberglinea.com.br/saude/apos-ano-de-ajustes-healthtech-sami-capta-r-60-mi-e-preve-salto-maior-em-2025/&ved=2ahUKEwi58KrCz7qKAxVYE7kGHQh_JNkQxfQBegQICBAC&usg=AOvVaw0VRFTT6S_A1NW1IXsglKvE', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,377 - DEBUG - Data original da notícia: 4 dias atrás
+2024-12-22 02:15:37,377 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,377 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,377 - DEBUG - ==================================================
+2024-12-22 02:15:37,377 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,377 - DEBUG - Título: Terradot capta R$ 353 mi com Google e Microsoft; AppBarber é adquirida pela Zucchetti: os destaques da semana no ecossistema
+2024-12-22 02:15:37,377 - DEBUG - Estrutura completa da notícia: {'title': 'Terradot capta R$ 353 mi com Google e Microsoft; AppBarber é adquirida pela Zucchetti: os destaques da semana no ecossistema', 'media': 'Pequenas Empresas & Grandes Negócios', 'date': '1 semana atrás', 'datetime': nan, 'desc': 'Startup atua na área de remoção de carbono com tecnologia que melhora terras agrícolas.', 'link': 'https://revistapegn.globo.com/startups/noticia/2024/12/terradot-capta-r-353-mi-com-google-e-microsoft-appbarber-e-adquirida-pela-zucchetti-os-destaques-da-semana-no-ecossistema.ghtml&ved=2ahUKEwi58KrCz7qKAxVYE7kGHQh_JNkQxfQBegQIBRAC&usg=AOvVaw3m5AKQIHVhWn2FNBalIy8i', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,377 - DEBUG - Data original da notícia: 1 semana atrás
+2024-12-22 02:15:37,377 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,377 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,377 - DEBUG - ==================================================
+2024-12-22 02:15:37,377 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,377 - DEBUG - Título: Com um pé no Vale do Silício e outro no Brasil, Terradot capta R$ 353M
+2024-12-22 02:15:37,377 - DEBUG - Estrutura completa da notícia: {'title': 'Com um pé no Vale do Silício e outro no Brasil, Terradot capta R$ 353M', 'media': 'Startups', 'date': '1 semana atrás', 'datetime': nan, 'desc': 'Terradot, startup de extração de carbono em solos agrícolas atraiu nomes como Microsoft e Google em sua Série A e tem Brasil como laboratório.', 'link': 'https://startups.com.br/negocios/com-um-pe-no-vale-do-silicio-e-outro-no-brasil-terradot-capta-r-353m/&ved=2ahUKEwi58KrCz7qKAxVYE7kGHQh_JNkQxfQBegQIABAC&usg=AOvVaw1aVk6q-EdKJ-B8Amehcp11', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,377 - DEBUG - Data original da notícia: 1 semana atrás
+2024-12-22 02:15:37,377 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,377 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,377 - DEBUG - ==================================================
+2024-12-22 02:15:37,377 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,377 - DEBUG - Título: DGF capta R$ 200 milhões para seu 8º fundo. A tese é a mesma (mas com uma pitada de IA)
+2024-12-22 02:15:37,377 - DEBUG - Estrutura completa da notícia: {'title': 'DGF capta R$ 200 milhões para seu 8º fundo. A tese é a mesma (mas com uma pitada de IA)', 'media': 'NeoFeed', 'date': '2 semanas atrás', 'datetime': nan, 'desc': 'Uma das casas mais tradicionais de venture capital do Brasil faz o first closing de seu novo fundo, que tem meta de chegar a R$ 300 milhões.', 'link': 'https://neofeed.com.br/startups/dgf-capta-r-200-milhoes-para-seu-8o-fundo-a-tese-e-a-mesma-mas-com-uma-pitada-de-ia/&ved=2ahUKEwi58KrCz7qKAxVYE7kGHQh_JNkQxfQBegQIBhAC&usg=AOvVaw0Q_tG8OCWIKHwexBs9PUPJ', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,377 - DEBUG - Data original da notícia: 2 semanas atrás
+2024-12-22 02:15:37,377 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,377 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,377 - DEBUG - ==================================================
+2024-12-22 02:15:37,377 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,377 - DEBUG - Título: Rodadas da semana: fintech Zig capta R$ 155 mi com soluções para shows e eventos
+2024-12-22 02:15:37,377 - DEBUG - Estrutura completa da notícia: {'title': 'Rodadas da semana: fintech Zig capta R$ 155 mi com soluções para shows e eventos', 'media': 'Bloomberg Línea', 'date': '2 semanas atrás', 'datetime': nan, 'desc': 'Duas outras startups fundadas por empreendedores brasileiros, a Onze e a Resend, também receberam aportes acima de R$ 100 milhões na primeira semana do mês.', 'link': 'https://www.bloomberglinea.com.br/startups/rodadas-da-semana-fintech-zig-capta-r-155-mi-com-solucoes-para-shows-e-eventos/&ved=2ahUKEwj_i_nCz7qKAxUoE7kGHQisMAo4ChDF9AF6BAgCEAI&usg=AOvVaw0K_38Had6dtTanSluU1NL1', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,377 - DEBUG - Data original da notícia: 2 semanas atrás
+2024-12-22 02:15:37,377 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,378 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,378 - DEBUG - ==================================================
+2024-12-22 02:15:37,378 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,378 - DEBUG - Título: xAI vai superar a OpenAI? Empresa de Musk capta R$ 36 bi e desafia gigantes do setor
+2024-12-22 02:15:37,378 - DEBUG - Estrutura completa da notícia: {'title': 'xAI vai superar a OpenAI? Empresa de Musk capta R$ 36 bi e desafia gigantes do setor', 'media': 'Exame', 'date': '2 semanas atrás', 'datetime': nan, 'desc': 'A startup de inteligência artificial de Elon Musk, xAI, anunciou na quinta-feira, 5, que arrecadou aproximadamente US$ 6 bilhões (cerca de R$ 36,18 bilhões)...', 'link': 'https://exame.com/inteligencia-artificial/xai-vai-superar-a-openai-empresa-de-musk-capta-r-36-bi-e-desafia-gigantes-do-setor/&ved=2ahUKEwj_i_nCz7qKAxUoE7kGHQisMAo4ChDF9AF6BAgJEAI&usg=AOvVaw2x7uaGyuKq8L55D7lFGiTy', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,378 - DEBUG - Data original da notícia: 2 semanas atrás
+2024-12-22 02:15:37,378 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,378 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,378 - DEBUG - ==================================================
+2024-12-22 02:15:37,378 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,378 - DEBUG - Título: Depois de captar R$ 250M, Softplan faz sua 12ª aquisição
+2024-12-22 02:15:37,378 - DEBUG - Estrutura completa da notícia: {'title': 'Depois de captar R$ 250M, Softplan faz sua 12ª aquisição', 'media': 'Startups', 'date': '2 semanas atrás', 'datetime': nan, 'desc': 'Empresa catarinense anunciou a compra integral da Runrun.it, startup de automação de processos e tarefas para equipes.', 'link': 'https://startups.com.br/negocios/ma/depois-de-captar-r-250m-softplan-faz-sua-12a-aquisicao/&ved=2ahUKEwj_i_nCz7qKAxUoE7kGHQisMAo4ChDF9AF6BAgBEAI&usg=AOvVaw0hWU31FJcyvk6NrXwcmn3l', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,378 - DEBUG - Data original da notícia: 2 semanas atrás
+2024-12-22 02:15:37,378 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,378 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,378 - DEBUG - ==================================================
+2024-12-22 02:15:37,378 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,378 - DEBUG - Título: Dona da InfinitePay, CloudWalk triplica base de clientes e capta R$ 2,7 bi em FIDC
+2024-12-22 02:15:37,378 - DEBUG - Estrutura completa da notícia: {'title': 'Dona da InfinitePay, CloudWalk triplica base de clientes e capta R$ 2,7 bi em FIDC', 'media': 'Bloomberg Línea', 'date': '2 semanas atrás', 'datetime': nan, 'desc': 'Este é o nono veículo de dívida na história da fintech liderada por Luis Silva e o segundo deste ano - em maio, a startup havia informado ao mercado uma...', 'link': 'https://www.bloomberglinea.com.br/startups/dona-da-infinitepay-cloudwalk-triplica-base-de-clientes-e-capta-r-27-bi-em-fidc/&ved=2ahUKEwj_i_nCz7qKAxUoE7kGHQisMAo4ChDF9AF6BAgGEAI&usg=AOvVaw3NwwJ6nx76vP-8JKhcD5XW', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,378 - DEBUG - Data original da notícia: 2 semanas atrás
+2024-12-22 02:15:37,378 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,378 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,378 - DEBUG - ==================================================
+2024-12-22 02:15:37,378 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,378 - DEBUG - Título: Startup nordestina capta R$ 60 milhões para expandir sua tecnologia e fortalecer o micro e pequeno empresário
+2024-12-22 02:15:37,378 - DEBUG - Estrutura completa da notícia: {'title': 'Startup nordestina capta R$ 60 milhões para expandir sua tecnologia e fortalecer o micro e pequeno empresário', 'media': 'Correio dos Municípios', 'date': '3 semanas atrás', 'datetime': nan, 'desc': 'A Agilize, primeira contabilidade online do Brasil, anuncia uma nova rodada de investimento no valor de R$ 60 milhões, liderada pela AXA, líder global em i.', 'link': 'https://correiodosmunicipios-al.com.br/geral/2024/11/29/142185-startup-nordestina-capta-r-60-milhoes-para-expandir-sua-tecnologia-e-fortalecer-o-micro-e-pequeno-empresario&ved=2ahUKEwj_i_nCz7qKAxUoE7kGHQisMAo4ChDF9AF6BAgIEAI&usg=AOvVaw0AnwGFim-65Cv05sDKsBsj', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,378 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:15:37,378 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,378 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,378 - DEBUG - ==================================================
+2024-12-22 02:15:37,378 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,378 - DEBUG - Título: Tudo que rolou no primeiro Startup Labs; Agilize capta R$ 60 mi: os destaques da semana no ecossistema
+2024-12-22 02:15:37,378 - DEBUG - Estrutura completa da notícia: {'title': 'Tudo que rolou no primeiro Startup Labs; Agilize capta R$ 60 mi: os destaques da semana no ecossistema', 'media': 'Pequenas Empresas & Grandes Negócios', 'date': '3 semanas atrás', 'datetime': nan, 'desc': 'Evento reuniu investidores, líderes de hubs e pessoas fundadoras de startups nesta semana no Rio de Janeiro.', 'link': 'https://revistapegn.globo.com/startups/noticia/2024/11/tudo-que-rolou-no-primeiro-startup-labs-agilize-capta-r-60-mi-os-destaques-da-semana-no-ecossistema.ghtml&ved=2ahUKEwj_i_nCz7qKAxUoE7kGHQisMAo4ChDF9AF6BAgHEAI&usg=AOvVaw32a1mmFrKR175oZb6gi--u', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,378 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:15:37,378 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,378 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,378 - DEBUG - ==================================================
+2024-12-22 02:15:37,378 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,378 - DEBUG - Título: Startup baiana capta R$ 60 mi para acabar com um problemão na vida das PMEs
+2024-12-22 02:15:37,378 - DEBUG - Estrutura completa da notícia: {'title': 'Startup baiana capta R$ 60 mi para acabar com um problemão na vida das PMEs', 'media': 'Exame', 'date': '3 semanas atrás', 'datetime': nan, 'desc': 'Startup baiana capta R$ 60 mi para acabar com um problemão na vida das PMEs · Com o aporte, a startup pretende expandir sua tecnologia, fortalecer os serviços...', 'link': 'https://exame.com/negocios/startup-baiana-capta-r-60-mi-para-acabar-com-um-problemao-na-vida-das-pmes/&ved=2ahUKEwj_i_nCz7qKAxUoE7kGHQisMAo4ChDF9AF6BAgDEAI&usg=AOvVaw1GZB20_p3IfEiOg81afuXd', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,378 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:15:37,378 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,378 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,378 - DEBUG - ==================================================
+2024-12-22 02:15:37,378 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,378 - DEBUG - Título: Teachy capta R$ 40M para expandir nos EUA e América Latina
+2024-12-22 02:15:37,378 - DEBUG - Estrutura completa da notícia: {'title': 'Teachy capta R$ 40M para expandir nos EUA e América Latina', 'media': 'Startups', 'date': '3 semanas atrás', 'datetime': nan, 'desc': 'No site, a Teachy oferece três tipos de planos: uma modalidade básica, que é gratuita; um plano para professores a partir de R$ 29,90 ao mês; e uma opção para...', 'link': 'https://startups.com.br/negocios/rodada-de-investimento/teachy-capta-r-40m-para-expandir-nos-eua-e-america-latina/&ved=2ahUKEwj_i_nCz7qKAxUoE7kGHQisMAo4ChDF9AF6BAgFEAI&usg=AOvVaw13eBQR0EHIvsd1LQ_KPnAA', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,378 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:15:37,378 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,378 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,378 - DEBUG - ==================================================
+2024-12-22 02:15:37,378 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,378 - DEBUG - Título: Agilize levanta rodada de R$ 60M liderada por seguradora francesa
+2024-12-22 02:15:37,378 - DEBUG - Estrutura completa da notícia: {'title': 'Agilize levanta rodada de R$ 60M liderada por seguradora francesa', 'media': 'Startups', 'date': '3 semanas atrás', 'datetime': nan, 'desc': 'O aporte contou ainda com a participação do L4, o fundo da B3, além da Stone. Recursos serão usados para dobrar faturamento.', 'link': 'https://startups.com.br/negocios/rodada-de-investimento/agilize-levanta-rodada-de-r-60m-liderada-por-seguradora-francesa/&ved=2ahUKEwj_i_nCz7qKAxUoE7kGHQisMAo4ChDF9AF6BAgAEAI&usg=AOvVaw30hRP0p147cnsS70w506hy', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,378 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:15:37,378 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,378 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,378 - DEBUG - ==================================================
+2024-12-22 02:15:37,378 - DEBUG - Notícia encontrada:
+2024-12-22 02:15:37,378 - DEBUG - Título: A Teachy usa IA para ajudar os professores – e acaba de captar R$ 40 milhões
+2024-12-22 02:15:37,379 - DEBUG - Estrutura completa da notícia: {'title': 'A Teachy usa IA para ajudar os professores – e acaba de captar R$ 40 milhões', 'media': 'Brazil Journal', 'date': '3 semanas atrás', 'datetime': nan, 'desc': 'A Teachy -- uma startup brasileira que está usando IA para ajudar os professores nas aulas -- acaba de levantar R$ 40 milhões com duas gestoras americanas...', 'link': 'https://braziljournal.com/a-teachy-usa-ia-para-ajudar-os-professores-e-acaba-de-captar-r-40-milhoes/&ved=2ahUKEwj_i_nCz7qKAxUoE7kGHQisMAo4ChDF9AF6BAgEEAI&usg=AOvVaw3clsDDQPsrhHjkjI0cL_Ne', 'img': 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+2024-12-22 02:15:37,379 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:15:37,379 - DEBUG - Tipo da data: <class 'str'>
+2024-12-22 02:15:37,379 - DEBUG - Processando notícia: Sem título
+2024-12-22 02:15:37,379 - DEBUG - Total de notícias filtradas: 0
+2024-12-22 02:15:37,379 - DEBUG - Nenhuma notícia encontrada após filtro
+2024-12-22 02:16:36,705 - DEBUG - Total count is not available when sort by date
+2024-12-22 02:16:36,759 - DEBUG - /etc/localtime found
+2024-12-22 02:16:36,763 - DEBUG - 1 found:
+ {'/etc/localtime is a symlink to': 'America/Sao_Paulo'}
+2024-12-22 02:16:37,921 - DEBUG - Total count is not available when sort by date
+2024-12-22 02:16:37,979 - DEBUG - Termo buscado: startup capta R$
+2024-12-22 02:16:37,979 - DEBUG - Número total de notícias antes do filtro: 20
+2024-12-22 02:16:37,980 - DEBUG - Período de busca: de 2024-12-15 02:16:37.980007 até 2024-12-22 02:16:37.980007
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: á 19 horas
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-21 07:16:37.980059
+2024-12-22 02:16:37,980 - DEBUG - Notícia adicionada: Rodadas da semana: Sami capta R$ 60 mi, e Nubank investe US$ 150 mi em banco digital
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 2 dias atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-20 02:16:37.980124
+2024-12-22 02:16:37,980 - DEBUG - Notícia adicionada: Com "estúdio musical no celular", Murb capta R$ 1M para expandir
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 2 dias atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-20 02:16:37.980182
+2024-12-22 02:16:37,980 - DEBUG - Notícia adicionada: Alloy capta R$ 1 milhão com Comunitá
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 2 dias atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-20 02:16:37.980237
+2024-12-22 02:16:37,980 - DEBUG - Notícia adicionada: Stoa capta R$ 2 milhões para digitalizar gestão de seguros para corretores
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 2 dias atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-20 02:16:37.980291
+2024-12-22 02:16:37,980 - DEBUG - Notícia adicionada: Fintech Conta Comigo Digital capta seed de R$ 3,25 milhões
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 4 dias atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-18 02:16:37.980343
+2024-12-22 02:16:37,980 - DEBUG - Notícia adicionada: MinusSugar capta R$ 15,1 milhões para extrair açúcar do suco de laranja
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 4 dias atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-18 02:16:37.980395
+2024-12-22 02:16:37,980 - DEBUG - Notícia adicionada: Após ano de ajustes, healthtech Sami capta R$ 60 mi e prevê salto maior em 2025
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 1 semana atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-15 02:16:37.980450
+2024-12-22 02:16:37,980 - DEBUG - Notícia adicionada: Terradot capta R$ 353 mi com Google e Microsoft; AppBarber é adquirida pela Zucchetti: os destaques da semana no ecossistema
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 1 semana atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-15 02:16:37.980503
+2024-12-22 02:16:37,980 - DEBUG - Notícia adicionada: Com um pé no Vale do Silício e outro no Brasil, Terradot capta R$ 353M
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 2 semanas atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-08 02:16:37.980555
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 2 semanas atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-08 02:16:37.980591
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 2 semanas atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-08 02:16:37.980628
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 2 semanas atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-08 02:16:37.980663
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 2 semanas atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-08 02:16:37.980698
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-01 02:16:37.980733
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-01 02:16:37.980767
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-01 02:16:37.980801
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-01 02:16:37.980842
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-01 02:16:37.980877
+2024-12-22 02:16:37,980 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:16:37,980 - DEBUG - Data convertida: 2024-12-01 02:16:37.980917
+2024-12-22 02:16:37,980 - DEBUG - Total de notícias filtradas: 9
+2024-12-22 02:16:37,981 - DEBUG - Encontradas 9 notícias após filtro
+2024-12-22 02:17:43,707 - DEBUG - Total count is not available when sort by date
+2024-12-22 02:17:43,763 - DEBUG - /etc/localtime found
+2024-12-22 02:17:43,767 - DEBUG - 1 found:
+ {'/etc/localtime is a symlink to': 'America/Sao_Paulo'}
+2024-12-22 02:17:44,958 - DEBUG - Total count is not available when sort by date
+2024-12-22 02:17:45,024 - DEBUG - Termo buscado: startup capta R$
+2024-12-22 02:17:45,024 - DEBUG - Número total de notícias antes do filtro: 20
+2024-12-22 02:17:45,024 - DEBUG - Período de busca: de 2024-12-15 02:17:45.024773 até 2024-12-22 02:17:45.024773
+2024-12-22 02:17:45,024 - DEBUG - Data original da notícia: á 19 horas
+2024-12-22 02:17:45,024 - DEBUG - Data convertida: 2024-12-21 07:17:45.024837
+2024-12-22 02:17:45,024 - DEBUG - Notícia adicionada: Rodadas da semana: Sami capta R$ 60 mi, e Nubank investe US$ 150 mi em banco digital
+2024-12-22 02:17:45,024 - DEBUG - Data original da notícia: 2 dias atrás
+2024-12-22 02:17:45,024 - DEBUG - Data convertida: 2024-12-20 02:17:45.024907
+2024-12-22 02:17:45,024 - DEBUG - Notícia adicionada: Com "estúdio musical no celular", Murb capta R$ 1M para expandir
+2024-12-22 02:17:45,024 - DEBUG - Data original da notícia: 2 dias atrás
+2024-12-22 02:17:45,024 - DEBUG - Data convertida: 2024-12-20 02:17:45.024967
+2024-12-22 02:17:45,025 - DEBUG - Notícia adicionada: Alloy capta R$ 1 milhão com Comunitá
+2024-12-22 02:17:45,025 - DEBUG - Data original da notícia: 2 dias atrás
+2024-12-22 02:17:45,025 - DEBUG - Data convertida: 2024-12-20 02:17:45.025042
+2024-12-22 02:17:45,025 - DEBUG - Notícia adicionada: Stoa capta R$ 2 milhões para digitalizar gestão de seguros para corretores
+2024-12-22 02:17:45,025 - DEBUG - Data original da notícia: 2 dias atrás
+2024-12-22 02:17:45,025 - DEBUG - Data convertida: 2024-12-20 02:17:45.025101
+2024-12-22 02:17:45,025 - DEBUG - Notícia adicionada: Fintech Conta Comigo Digital capta seed de R$ 3,25 milhões
+2024-12-22 02:17:45,025 - DEBUG - Data original da notícia: 2 dias atrás
+2024-12-22 02:17:45,025 - DEBUG - Data convertida: 2024-12-20 02:17:45.025158
+2024-12-22 02:17:45,025 - DEBUG - Notícia adicionada: Conta Comigo Digital capta R$ 3,25 milhões em rodada seed
+2024-12-22 02:17:45,025 - DEBUG - Data original da notícia: 3 dias atrás
+2024-12-22 02:17:45,025 - DEBUG - Data convertida: 2024-12-19 02:17:45.025269
+2024-12-22 02:17:45,025 - DEBUG - Notícia adicionada: Databricks capta R$ 62 bilhões e vai investir em IA e aquisições
+2024-12-22 02:17:45,025 - DEBUG - Data original da notícia: 4 dias atrás
+2024-12-22 02:17:45,025 - DEBUG - Data convertida: 2024-12-18 02:17:45.025356
+2024-12-22 02:17:45,025 - DEBUG - Notícia adicionada: MinusSugar capta R$ 15,1 milhões para extrair açúcar do suco de laranja
+2024-12-22 02:17:45,025 - DEBUG - Data original da notícia: 4 dias atrás
+2024-12-22 02:17:45,025 - DEBUG - Data convertida: 2024-12-18 02:17:45.025419
+2024-12-22 02:17:45,025 - DEBUG - Notícia adicionada: Após ano de ajustes, healthtech Sami capta R$ 60 mi e prevê salto maior em 2025
+2024-12-22 02:17:45,025 - DEBUG - Data original da notícia: 1 semana atrás
+2024-12-22 02:17:45,025 - DEBUG - Data convertida: 2024-12-15 02:17:45.025487
+2024-12-22 02:17:45,025 - DEBUG - Notícia adicionada: Terradot capta R$ 353 mi com Google e Microsoft; AppBarber é adquirida pela Zucchetti: os destaques da semana no ecossistema
+2024-12-22 02:17:45,025 - DEBUG - Data original da notícia: 2 semanas atrás
+2024-12-22 02:17:45,025 - DEBUG - Data convertida: 2024-12-08 02:17:45.025548
+2024-12-22 02:17:45,025 - DEBUG - Data original da notícia: 2 semanas atrás
+2024-12-22 02:17:45,025 - DEBUG - Data convertida: 2024-12-08 02:17:45.025604
+2024-12-22 02:17:45,025 - DEBUG - Data original da notícia: 2 semanas atrás
+2024-12-22 02:17:45,025 - DEBUG - Data convertida: 2024-12-08 02:17:45.025639
+2024-12-22 02:17:45,025 - DEBUG - Data original da notícia: 2 semanas atrás
+2024-12-22 02:17:45,025 - DEBUG - Data convertida: 2024-12-08 02:17:45.025674
+2024-12-22 02:17:45,025 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:17:45,025 - DEBUG - Data convertida: 2024-12-01 02:17:45.025709
+2024-12-22 02:17:45,025 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:17:45,025 - DEBUG - Data convertida: 2024-12-01 02:17:45.025743
+2024-12-22 02:17:45,025 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:17:45,025 - DEBUG - Data convertida: 2024-12-01 02:17:45.025777
+2024-12-22 02:17:45,025 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:17:45,026 - DEBUG - Data convertida: 2024-12-01 02:17:45.025996
+2024-12-22 02:17:45,026 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:17:45,026 - DEBUG - Data convertida: 2024-12-01 02:17:45.026063
+2024-12-22 02:17:45,026 - DEBUG - Data original da notícia: 3 semanas atrás
+2024-12-22 02:17:45,026 - DEBUG - Data convertida: 2024-12-01 02:17:45.026107
+2024-12-22 02:17:45,026 - DEBUG - Total de notícias filtradas: 10
