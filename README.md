@@ -1,123 +1,137 @@
-# GoogleNews
+# API de Notícias
 
-[![Build Status](https://app.travis-ci.com/Iceloof/GoogleNews.svg)](https://app.travis-ci.com/github/Iceloof/GoogleNews)
-[![Coverage Status](https://coveralls.io/repos/github/Iceloof/GoogleNews/badge.svg)](https://coveralls.io/github/Iceloof/GoogleNews)
-[![PyPI](https://img.shields.io/pypi/v/GoogleNews)](https://pypi.org/project/GoogleNews/)
-[![PyPI - Downloads](https://img.shields.io/pypi/dm/GoogleNews)](https://pypistats.org/packages/googlenews)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/GoogleNews)
-![PyPI - Wheel](https://img.shields.io/pypi/wheel/GoogleNews)
-![GitHub contributors](https://img.shields.io/github/contributors/Iceloof/GoogleNews)
-![GitHub issues](https://img.shields.io/github/issues-raw/Iceloof/GoogleNews)
-![GitHub Action](https://github.com/Iceloof/GoogleNews/workflows/GitHub%20Action/badge.svg)
-![GitHub](https://img.shields.io/github/license/Iceloof/GoogleNews)
+API para busca de notícias usando GoogleNews, desenvolvida com FastAPI.
 
-## Install
+## Instalação Local
+
+1. Clone o repositório
+2. Instale as dependências:
 ```
 pip install GoogleNews
 ```
-or
-```
-pip install --upgrade GoogleNews
-```
-## Usage
-- Initializing
+
+## Uso
+- Inicialização
 ```
 from GoogleNews import GoogleNews
 googlenews = GoogleNews()
 ```
-- Check version
+- Verificar versão
 ```
 print(googlenews.getVersion())
 ```
-- Enable to throw exception
+- Habilitar exceções
 ```
 googlenews.enableException(True)
 ```
-- Optional choose language
+- Escolher idioma
 ```
 googlenews = GoogleNews(lang='en')
 ```
-or
+ou
 ```
 googlenews = GoogleNews(lang='en', region='US')
 ```
-- Optional choose period (period and custom day range should not set together)
+- Escolher período
 ```
 googlenews = GoogleNews(period='7d')
 ```
-- Optional choose custom day range (mm/dd/yyyy)
+- Escolher intervalo de datas
 ```
 googlenews = GoogleNews(start='02/01/2020',end='02/28/2020')
 ```
-- Optional set encode
+- Definir codificação
 ```
 googlenews = GoogleNews(encode='utf-8')
 ```
-or
+ou
 ```
 googlenews.set_lang('en')
 googlenews.set_period('7d')
 googlenews.set_time_range('02/01/2020','02/28/2020')
 googlenews.set_encode('utf-8')
 ```
-- **news.google.com** search sample
+- **news.google.com** busca de exemplo
 ```
 googlenews.get_news('APPLE')
 ```
-- **news.google.com get news by topics
+- **news.google.com busca notícias por tópicos
 ```
-# Sports
+# Esportes
 googlenews.set_topic('CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp1ZEdvU0JYQjBMVUpTR2dKQ1VpZ0FQAQ')
 googlenews.get_news()
 ```
-- **news.google.com get news by topic and sections
+- **news.google.com busca notícias por tópico e seções
 ```
-# Sports
+# Esportes
 googlenews.set_topic('CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp1ZEdvU0JYQjBMVUpTR2dKQ1VpZ0FQAQ')
-# Football Soccer
+# Futebol
 googlenews.set_section('CAQiS0NCQVNNZ29JTDIwdk1EWnVkR29TQlhCMExVSlNHZ0pDVWlJT0NBUWFDZ29JTDIwdk1ESjJlRFFxQ3dvSkVnZEdkWFJsWW05c0tBQSouCAAqKggKIiRDQkFTRlFvSUwyMHZNRFp1ZEdvU0JYQjBMVUpTR2dKQ1VpZ0FQAVAB')
 
 googlenews.get_news()
 ```
-- **google.com** section news search sample
+- **google.com** busca de notícias de seção
 ```
 googlenews.search('APPLE')
 ```
 
-Default return first page result, you don't need to get first page again, otherwise you might get duplicate result. To get other page of search results:
+Por padrão, retorna o primeiro resultado da página, você não precisa buscar a primeira página novamente, caso contrário, você pode obter resultados duplicados. Para obter outra página de resultados de busca:
 
 ```
 googlenews.get_page(2)
 ```
-- If you only want to get specific page
+- Se você quiser obter uma página específica
 ```
 result = googlenews.page_at(2)
 ```
-- If you want to get the total result number of the search(this is approximate number, not exact number, it is the number showing on the google search page) (Note: this function is not available for `googlenews.search()`)
+- Se você quiser obter o número total de resultados da busca (este é um número aproximado, não exato, é o número mostrado na página de busca do Google) (Nota: esta função não está disponível para `googlenews.search()`)
 ```
 googlenews.total_count()
 ```
-- Get results will return the list, `[{'title': '...', 'media': '...', 'date': '...', 'datetime': '...', 'desc': '...', 'link': '...', 'img': '...'}]`
+- Obter resultados retorna a lista, `[{'title': '...', 'media': '...', 'date': '...', 'datetime': '...', 'desc': '...', 'link': '...', 'img': '...'}]`
 ```
 googlenews.results()
 ```
-if `googlenews.results(sort=True)` the tool will try to order the results in cronologically reversed order
+Se `googlenews.results(sort=True)` o utilitário tentará ordenar os resultados em ordem cronológica reversa
 
-- Get texts will return the list of news titles
+- Obter textos retorna a lista de títulos de notícias
 ```
 googlenews.get_texts()
 ```
-- Get links returns the list of news links
+- Obter links retorna a lista de links de notícias
 ```
 googlenews.get_links()
 ```
-- Clear result list before doing another search with the same object
+- Limpar lista de resultados antes de fazer outra busca com o mesmo objeto
 ```
 googlenews.clear()
 ```
-## Issue
-Image is not working in the latest version, it can only return default google loading gif
+## Problemas
+A imagem não está funcionando na versão mais recente, ela só pode retornar o gif de carregamento do google padrão
 
-The date range is not always working as Google may return the result with random order or out of date range.
+O intervalo de datas não sempre funciona como o Google pode retornar resultados com ordem aleatória ou fora do intervalo de datas.
 
-Google may recognize the program as automated robots and block the IP, using cloud server and fetching data with high frequency will get higher chance to be blocked. 
+O Google pode reconhecer o programa como robôs automatizados e bloquear o IP, usando servidor em nuvem e buscando dados com alta frequência terá mais chance de ser bloqueado. 
+
+
+bash
+pip install -r requirements.txt
+
+3. Execute a aplicação:
+bash
+uvicorn api_news:app --reload
+
+
+## Endpoints
+
+### GET /buscar-noticias/
+Busca notícias com base nos parâmetros fornecidos.
+
+Parâmetros:
+- termo (string, obrigatório): Termo de busca
+- dias (int, opcional, default=7): Período de busca em dias
+- fonte (string, opcional): Filtrar por fonte específica
+- paginas (int, opcional, default=2): Número de páginas de resultados
+
+## Deploy
+Esta API está configurada para deploy automático no Railway.

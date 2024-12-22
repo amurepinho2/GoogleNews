@@ -3,8 +3,16 @@ from datetime import datetime, timedelta
 from typing import Optional, List
 from pydantic import BaseModel
 from GoogleNews import GoogleNews
+import os
 
-app = FastAPI()
+app = FastAPI(title="API de Notícias",
+             description="API para busca de notícias usando GoogleNews",
+             version="1.0.0")
+
+# Rota raiz para verificar se a API está funcionando
+@app.get("/")
+async def root():
+    return {"status": "online", "message": "API de Notícias está funcionando!"}
 
 class Noticia(BaseModel):
     titulo: str
