@@ -9,6 +9,28 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
+URLS_PERMITIDAS = [
+    'braziljournal.com',
+    'startups.com.br',
+    'revistapegn.globo.com',
+    'neofeed.com.br',
+    'exame.com',
+    'startupi.com.br',
+    'infomoney.com.br',
+    'pipelinevalor.globo.com',
+    'valor.globo.com',
+    'baguete.com.br',
+    'finsidersbrasil.com.br',
+    'bloomberglinea.com.br',
+    'epocanegocios.globo.com'
+]
+
+def url_permitida(url: str) -> bool:
+    """Verifica se a URL pertence às fontes permitidas"""
+    if not url:
+        return False
+    return any(dominio in url.lower() for dominio in URLS_PERMITIDAS)
+
 # Configuração da API FastAPI com metadados
 app = FastAPI(
     title="API de Notícias",
@@ -188,7 +210,9 @@ async def buscar_noticias(
                 continue
                 
             url = limpar_url(noticia.get('link'))
-            if not url or url in noticias_unicas:
+            
+            # Adiciona verificação de URL permitida
+            if not url or url in noticias_unicas or not url_permitida(url):
                 continue
                 
             imagem_url = None
