@@ -5,6 +5,9 @@ from pydantic import BaseModel
 from GoogleNews import GoogleNews
 import os
 from urllib.parse import urlparse, parse_qs, urlunparse
+import requests
+from bs4 import BeautifulSoup
+import re
 
 # Configuração da API FastAPI com metadados
 app = FastAPI(
@@ -52,12 +55,44 @@ def limpar_url(url: str) -> str:
     except:
         return url
 
+def extrair_imagem_da_pagina(url: str) -> Optional[str]:
+    """Extrai a primeira imagem relevante da página da notícia"""
+    try:
+        # Faz request com headers para evitar bloqueios
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
+        response = requests.get(url, headers=headers, timeout=5)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # Procura por meta tags de imagem primeiro
+        meta_img = soup.find('meta', property=['og:image', 'twitter:image'])
+        if meta_img and meta_img.get('content'):
+            return meta_img['content']
+            
+        # Procura por imagens no artigo
+        for img in soup.find_all('img'):
+            src = img.get('src', '')
+            # Ignora ícones e imagens pequenas
+            if src and not any(x in src.lower() for x in ['icon', 'logo', 'avatar']):
+                if src.startswith('//'):
+                    src = 'https:' + src
+                elif src.startswith('/'):
+                    base_url = '{uri.scheme}://{uri.netloc}'.format(uri=urlparse(url))
+                    src = base_url + src
+                return src
+                
+        return None
+    except Exception:
+        return None
+
 @app.get("/buscar-noticias/", response_model=List[dict], tags=["Notícias"])
 async def buscar_noticias(
     termo: str,
     dias: Optional[int] = 7,
     fonte: Optional[str] = None,
-    paginas: Optional[int] = 2
+    paginas: Optional[int] = 2,
+    buscar_imagens: Optional[bool] = False
 ):
     """
     Busca notícias no Google News com base nos parâmetros fornecidos
@@ -67,6 +102,7 @@ async def buscar_noticias(
         dias: Período de busca em dias (padrão: 7)
         fonte: Filtrar por fonte específica (opcional)
         paginas: Número de páginas de resultados (padrão: 2)
+        buscar_imagens: Se deve tentar extrair imagens das páginas (padrão: False)
     
     Returns:
         Lista de notícias encontradas
@@ -98,13 +134,21 @@ async def buscar_noticias(
             if fonte and fonte.lower() not in noticia.get('media', '').lower():
                 continue
                 
+            url = limpar_url(noticia.get('link'))
+            imagem_url = None
+            
+            # Tenta extrair imagem se solicitado
+            if buscar_imagens and url:
+                imagem_url = extrair_imagem_da_pagina(url)
+                
             noticias_filtradas.append({
                 "id": f"{termo}-{idx}",
                 "titulo": noticia.get('title'),
                 "data": noticia.get('date'),
                 "fonte": noticia.get('media'),
                 "descricao": noticia.get('desc'),
-                "link": limpar_url(noticia.get('link')),
+                "link": url,
+                "imagem": imagem_url,
                 "termo_busca": termo
             })
         
