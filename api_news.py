@@ -103,7 +103,7 @@ def buscar_com_termos_multiplos(googlenews: GoogleNews, termos: str) -> List[dic
         
         # Adiciona apenas notícias não vistas
         for noticia in noticias:
-            url = noticia.get('link', '')
+            url = limpar_url(noticia.get('link', ''))  # Limpa a URL antes de comparar
             if url and url not in urls_vistas:
                 urls_vistas.add(url)
                 todas_noticias.append(noticia)
@@ -112,6 +112,42 @@ def buscar_com_termos_multiplos(googlenews: GoogleNews, termos: str) -> List[dic
         googlenews.clear()
     
     return todas_noticias
+
+def converter_data_relativa(data_str: str) -> datetime:
+    """Converte data relativa para datetime"""
+    hoje = datetime.now()
+    
+    if not data_str:
+        return hoje
+    
+    try:
+        if 'minuto' in data_str or 'minutos' in data_str:
+            minutos = int(re.findall(r'\d+', data_str)[0])
+            return hoje - timedelta(minutes=minutos)
+        elif 'hora' in data_str or 'horas' in data_str:
+            horas = int(re.findall(r'\d+', data_str)[0])
+            return hoje - timedelta(hours=horas)
+        elif 'dia' in data_str or 'dias' in data_str:
+            dias = int(re.findall(r'\d+', data_str)[0])
+            return hoje - timedelta(days=dias)
+        elif 'semana' in data_str or 'semanas' in data_str:
+            semanas = int(re.findall(r'\d+', data_str)[0])
+            return hoje - timedelta(weeks=semanas)
+        elif 'mês' in data_str or 'meses' in data_str:
+            meses = int(re.findall(r'\d+', data_str)[0])
+            return hoje - timedelta(days=meses * 30)
+    except:
+        pass
+    
+    return hoje
+
+def ordenar_noticias_por_data(noticias: List[dict]) -> List[dict]:
+    """Ordena notícias da mais recente para a mais antiga"""
+    return sorted(
+        noticias,
+        key=lambda x: converter_data_relativa(x.get('data', '')),
+        reverse=True  # True para ordem decrescente (mais recente primeiro)
+    )
 
 @app.get("/buscar-noticias/", response_model=List[dict], tags=["Notícias"])
 async def buscar_noticias(
@@ -144,7 +180,7 @@ async def buscar_noticias(
         
         # Busca com múltiplos termos
         noticias = buscar_com_termos_multiplos(googlenews, termo)
-        noticias_filtradas = []
+        noticias_unicas = {}
         
         # Processa e filtra os resultados
         for idx, noticia in enumerate(noticias):
@@ -152,12 +188,14 @@ async def buscar_noticias(
                 continue
                 
             url = limpar_url(noticia.get('link'))
+            if not url or url in noticias_unicas:
+                continue
+                
             imagem_url = None
-            
             if buscar_imagens and url:
                 imagem_url = extrair_imagem_da_pagina(url)
                 
-            noticias_filtradas.append({
+            noticias_unicas[url] = {
                 "id": f"{termo.replace(' OR ', '-')}-{idx}",
                 "titulo": noticia.get('title'),
                 "data": noticia.get('date'),
@@ -166,7 +204,11 @@ async def buscar_noticias(
                 "link": url,
                 "imagem": imagem_url,
                 "termo_busca": termo
-            })
+            }
+        
+        # Converte o dicionário em lista e ordena
+        noticias_filtradas = list(noticias_unicas.values())
+        noticias_filtradas = ordenar_noticias_por_data(noticias_filtradas)
         
         return noticias_filtradas
         
