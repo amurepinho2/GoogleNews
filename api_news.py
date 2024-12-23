@@ -86,6 +86,33 @@ def extrair_imagem_da_pagina(url: str) -> Optional[str]:
     except Exception:
         return None
 
+def buscar_com_termos_multiplos(googlenews: GoogleNews, termos: str) -> List[dict]:
+    """
+    Busca notícias com múltiplos termos usando OR
+    """
+    # Separa os termos pelo operador OR
+    termos_lista = [termo.strip() for termo in termos.split('OR')]
+    
+    todas_noticias = []
+    urls_vistas = set()  # Para evitar duplicatas
+    
+    # Busca para cada termo
+    for termo in termos_lista:
+        googlenews.search(termo)
+        noticias = googlenews.result()
+        
+        # Adiciona apenas notícias não vistas
+        for noticia in noticias:
+            url = noticia.get('link', '')
+            if url and url not in urls_vistas:
+                urls_vistas.add(url)
+                todas_noticias.append(noticia)
+        
+        # Limpa resultados para próxima busca
+        googlenews.clear()
+    
+    return todas_noticias
+
 @app.get("/buscar-noticias/", response_model=List[dict], tags=["Notícias"])
 async def buscar_noticias(
     termo: str,
@@ -98,14 +125,11 @@ async def buscar_noticias(
     Busca notícias no Google News com base nos parâmetros fornecidos
     
     Args:
-        termo: Palavra-chave para busca
+        termo: Termos de busca separados por OR (ex: "startup capta OR recebe aporte")
         dias: Período de busca em dias (padrão: 7)
         fonte: Filtrar por fonte específica (opcional)
         paginas: Número de páginas de resultados (padrão: 2)
         buscar_imagens: Se deve tentar extrair imagens das páginas (padrão: False)
-    
-    Returns:
-        Lista de notícias encontradas
     """
     try:
         # Inicializa o GoogleNews com configurações para PT-BR
@@ -116,33 +140,25 @@ async def buscar_noticias(
         data_inicio = data_fim - timedelta(days=dias)
         data_inicio_str = data_inicio.strftime('%m/%d/%Y')
         data_fim_str = data_fim.strftime('%m/%d/%Y')
-        
-        # Configura e executa a busca
         googlenews.set_time_range(data_inicio_str, data_fim_str)
-        googlenews.search(termo)
         
-        # Busca páginas adicionais se solicitado
-        for i in range(2, paginas + 1):
-            googlenews.get_page(i)
-            
-        noticias = googlenews.result()
+        # Busca com múltiplos termos
+        noticias = buscar_com_termos_multiplos(googlenews, termo)
         noticias_filtradas = []
         
         # Processa e filtra os resultados
         for idx, noticia in enumerate(noticias):
-            # Aplica filtro de fonte se especificado
             if fonte and fonte.lower() not in noticia.get('media', '').lower():
                 continue
                 
             url = limpar_url(noticia.get('link'))
             imagem_url = None
             
-            # Tenta extrair imagem se solicitado
             if buscar_imagens and url:
                 imagem_url = extrair_imagem_da_pagina(url)
                 
             noticias_filtradas.append({
-                "id": f"{termo}-{idx}",
+                "id": f"{termo.replace(' OR ', '-')}-{idx}",
                 "titulo": noticia.get('title'),
                 "data": noticia.get('date'),
                 "fonte": noticia.get('media'),
